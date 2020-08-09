@@ -1,6 +1,6 @@
 ### Exon Level Quantification from RSEM BAM output 
 
-We are aiming to have a consistent method of comparison between gene, transcript and exon concatenation per TF for stage 2 training. As a result, we chose the RSEM (as recommended by ENCODE) to generate the expression levels per gene and transcript. However, the RSEM output does not include explicit exon level quantification for the RNA experiment. RSEM outputs a genome based bam file and a transcript based bam file. -- The idea is to use transcript based bam file that to compute the weighted counts per exon. 
+We are aiming to have a consistent method of comparison between gene, transcript and exon concatenation per TF for stage 2 training. As a result, we chose the RSEM (as recommended by ENCODE) to generate the expression levels per gene and transcript. However, the RSEM output does not include explicit exon level quantification for the RNA experiment. RSEM outputs a genome based bam file and a transcript based bam file. -- The idea is to use transcript based bam file to compute the weighted counts per exon. 
 
 We use the transcript BAM file output by RSEM (rsem.transcript.bam) to generate exon level quantifications. 
 
